@@ -1,0 +1,36 @@
+@import "./headings.scss";
+
+.footer {
+    background-color: #212731;
+    color: rgba(255, 255, 255, 0.679);
+    @include flex(10rem);
+    justify-content: center;
+    padding: 50px 0;
+  }
+  
+  .footer-column {
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    a {
+     @include font-gray(normal);
+     margin-bottom: 10px;
+     font-size: small;
+     display: block;
+   }
+  }
+  
+  option {
+    color: #212731;
+  }

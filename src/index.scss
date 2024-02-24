@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: inherit;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    cursor: pointer;
+}
+
+body {
+    background-color: #FBFCFD;
+}
+
+.main {
+    padding-top: 80px;
+    width: 90%;
+    max-width: 60rem;
+    margin: auto;
+}
+
+
+
