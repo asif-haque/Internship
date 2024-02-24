@@ -5,7 +5,7 @@ export default function Card() {
   return (
     <div className="card">
       <img
-        src="/public/images/download 1.png"
+        src="/images/download 1.png"
         alt="Product Image"
         className="card-image"
       />

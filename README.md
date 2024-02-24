@@ -6,4 +6,4 @@ npm i
 
 npm run dev
 
-Hosted Site: 
+Hosted Site: https://assignment-asif.netlify.app/
