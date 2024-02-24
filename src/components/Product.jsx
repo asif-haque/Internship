@@ -24,7 +24,7 @@ export default function Product({
       <div className="index">{index}</div>
       <div className="container">
         <div className="image">
-          <img src="/public/images/download 1.png" alt="img" />
+          <img src="/images/download 1.png" alt="img" />
           <p className="img-title">{imgTitle}</p>
         </div>
         <div className="about">
