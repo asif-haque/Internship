@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./components/Navbar";
-import Headings from "./components/Headings";
+import Body from "./components/Body";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
         <Navbar main={main} />
       </header>
       <main ref={mainRef} className="main">
-        <Headings />
+        <Body />
       </main>
       <footer>
         <Footer />

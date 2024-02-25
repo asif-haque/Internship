@@ -49,9 +49,15 @@ export default function Navbar({ main }) {
           </nav>
           {/* slide opens */}
           <div className={`menu-div ${clicked ? `show` : `hide`}`}>
-            <a href="">Categories</a>
-            <a href="">Website Builders</a>
-            <a href="">Today's deals</a>
+            <a href="">
+              <div className="a-div">Categories</div>
+            </a>
+            <a href="">
+              <div className="a-div">Website Builders</div>
+            </a>
+            <a href="">
+              <div className="a-div">Today's deals</div>
+            </a>
           </div>
         </div>
       )}

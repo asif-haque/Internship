@@ -1,10 +1,10 @@
 import React from "react";
-import "./headings.scss";
+import "./body.scss";
 import Product from "./Product";
 import { products } from "../data/products";
 import Card from "./Card";
 
-export default function Headings() {
+export default function Body() {
   const lastUpdated = "February 22, 2020";
   const tags = [
     "Tools",
@@ -17,7 +17,7 @@ export default function Headings() {
   const routes = ["Home", "Hosting for all", "Hosting", "Hosting6", "Hosting5"];
 
   return (
-    <div className="headings">
+    <div className="body">
       <h1>Best Website builders in the US</h1>
       <div className="last-updated">
         <div>
