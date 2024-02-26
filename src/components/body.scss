@@ -138,11 +138,17 @@
                 border-bottom-left-radius: 10px;
             }
             button {
+                cursor: pointer;
                 background-color: #1B88F4;
                 padding: 10px;
                 border-top-right-radius: 10px;
                 border-bottom-right-radius: 10px;
                 color: white;
+                transition: all 0.3s;
+                &:hover {
+                  scale: 97%;
+                  box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 20px;
+                }
             }
         }
     } 

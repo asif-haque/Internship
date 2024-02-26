@@ -1,66 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .card {
-    width: 80%;
-    border-radius:   10px;
-    padding:   20px;
-    box-shadow:   0   4px   8px   0 rgba(0,0,0,0.2);
-    margin:   20px auto;
+  width: 80%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  font-size: small;
+
+  .card-image {
+    width: 100%;
+  }
+
+  .card-tags {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: x-small;
+
+    .tag {
+      background-color: #f1f1f1;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+
+  .card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .card-description {
+    margin-bottom: 10px;
+  }
+
+  .card-price {
+    margin-bottom: 20px;
+    font-size: large;
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+  .card-price :nth-child(2) {
     font-size: small;
+    color: gray;
+    text-decoration: line-through;
+  }
+  .card-price :nth-child(3) {
+    color: red;
+    font-size: medium;
+  }
 
-    .card-image {
-        width:   100%;
+  .card-button {
+    background-color: #1b88f4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s;
+    &:hover {
+      scale: 97%;
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 20px;
     }
-
-    .card-tags {
-        display: flex;
-        gap:   5px;
-        margin-bottom:   10px;
-        font-size: x-small;
-
-        .tag {
-            background-color: #f1f1f1;
-            padding:   5px   10px;
-            border-radius:   5px;
-        }
-    }
-
-    .card-title {
-        font-weight: bold;
-        margin-bottom:   10px;
-    }
-
-    .card-description {
-        margin-bottom:   10px;
-    }
-
-    .card-price {
-        margin-bottom:   20px;
-        font-size: large;
-        span {
-            margin-right: 0.5rem;
-        }
-    }
-    .card-price :nth-child(2) {
-        font-size: small;
-        color: gray;
-        text-decoration: line-through;
-    }
-    .card-price :nth-child(3) {
-        color: red;
-        font-size: medium
-        ;
-    }
-
-    .card-button {
-        background-color: #1B88F4;
-        color: white;
-        padding:   10px   20px;
-        border: none;
-        border-radius:   5px;
-        cursor: pointer;
-        width:   100%;
-    }
+  }
 }
