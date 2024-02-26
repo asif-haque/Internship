@@ -1,4 +1,5 @@
 import React from "react";
+import "./product.scss";
 
 export default function Product({
   achievement,
@@ -24,8 +25,10 @@ export default function Product({
       <div className="index">{index}</div>
       <div className="container">
         <div className="image">
-          <img src="/images/download 1.png" alt="img" />
-          <p className="img-title">{imgTitle}</p>
+          <div>
+            <img src="/images/download 1.png" alt="img" />
+            <p className="img-title">{imgTitle}</p>
+          </div>
         </div>
         <div className="about">
           <b>{about.title}</b> {about.desc}
@@ -55,15 +58,21 @@ export default function Product({
                 Why we love it
                 <div className="">
                   <div className="">
-                    <span className="material-symbols-outlined">check_circle</span>
+                    <span className="material-symbols-outlined">
+                      check_circle
+                    </span>
                     <p>Documentation</p>
                   </div>
                   <div className="">
-                    <span className="material-symbols-outlined">check_circle</span>
+                    <span className="material-symbols-outlined">
+                      check_circle
+                    </span>
                     <p>Easy Use</p>
                   </div>
                   <div className="">
-                    <span className="material-symbols-outlined">check_circle</span>
+                    <span className="material-symbols-outlined">
+                      check_circle
+                    </span>
                     <p>Out of Box</p>
                   </div>
                 </div>
