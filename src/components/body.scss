@@ -1,155 +1,153 @@
 @mixin font-gray($font) {
-    color: #4B5665;
-    font-size: $font;
+  color: #4b5665;
+  font-size: $font;
 }
 
 @mixin flex($gap) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: $gap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
 }
 
-
 .body {
-    h1 {
-        font-weight: normal;
-        color: #2C384A;
+  h1 {
+    font-weight: normal;
+    color: #2c384a;
+  }
+  h2 {
+    font-weight: 500;
+    color: #2c384a;
+    margin-top: 5rem;
+  }
+  .last-updated {
+    @include font-gray(small);
+    @include flex(none);
+    justify-content: space-between;
+    border-block: 1px solid rgba(0, 0, 0, 0.143);
+    padding-block: 7px;
+    margin-block: 5px;
+    div {
+      @include flex(5px);
+      align-items: center;
+      margin-right: 2rem;
     }
-    h2 {
-        font-weight: 500;
-        color: #2C384A;
-        margin-top: 5rem;
+  }
+  .tags {
+    @include flex(10px);
+    .tag {
+      padding: 3px 1rem;
+      background-color: white;
+      border-radius: 7px;
+      width: fit-content;
+      @include font-gray(x-small);
     }
-    .last-updated {
-        @include font-gray(small);
-        @include flex(none);
-        justify-content: space-between;
-        border-block: 1px solid rgba(0, 0, 0, 0.143);
-        padding-block: 7px;
-        margin-block: 5px;
-        div {
-            @include flex(5px);
-           align-items: center;
-           margin-right: 2rem;
-        }
+  }
+  .routes {
+    @include flex(7px);
+    margin-block: 15px;
+    .route {
+      @include font-gray(small);
+      @include flex(none);
+      align-items: center;
+
+      .material-symbols-outlined {
+        font-size: medium;
+      }
     }
-    .tags {
-        @include flex(10px);
-        .tag {
-            padding: 3px 1rem;
-            background-color: white;
-            border-radius: 7px;
-            width: fit-content;
-            @include font-gray(x-small);            
-        }
-    }
-    .routes {
-        @include flex(7px);
-        margin-block: 15px;
-        .route {
-            @include font-gray(small);
-            @include flex(none);
-            align-items: center;
-            
-            .material-symbols-outlined {
-                font-size: medium;
-            }
-        }
-    }
+  }
 }
 
 .products {
-    margin-block: 50px;
+  margin-block: 50px;
 }
 
-
 .signup {
-    margin-block: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-    p {
-        font-size: x-large;
-        font-weight: 300;
-        color: #2C384A;
+  margin-block: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  p {
+    font-size: x-large;
+    font-weight: 300;
+    color: #2c384a;
+  }
+  div {
+    input {
+      padding: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
+      border-top-left-radius: 10px;
+      border-bottom-leftk-radius: 10px;
     }
-    div {
-        input {
-            padding: 10px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
-            border-top-left-radius: 10px;
-            border-bottom-leftk-radius: 10px;
-        }
-        button {
-            background-color: #1B88F4;
-            padding: 10px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            color: white;
-        }
+    button {
+      background-color: #1b88f4;
+      padding: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: white;
     }
-} 
+  }
+}
 
 @media (min-width: 550px) {
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        & > * {
-            flex: 1;
-            max-width: 50%;
-        }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    & > * {
+      flex: 1;
+      max-width: 50%;
     }
+  }
 }
 
 @media (min-width: 750px) {
-    .container {
-        display: flex;
-        gap: 1rem;
+  .container {
+    display: flex;
+    gap: 1rem;
+  }
+  .rating {
+    text-align: center;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .signup {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-block: 3rem;
+    & > * {
+      flex: 1;
     }
-    .rating {
-        text-align: center;
+    p {
+      font-size: x-large;
+      font-weight: 300;
+      color: #2c384a;
     }
-    h1 {
-        font-size: 48px;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      input {
+        padding: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      button {
+        cursor: pointer;
+        background-color: #1b88f4;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: white;
+        transition: all 0.3s;
+        &:hover {
+          scale: 97%;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 20px;
+        }
+      }
     }
-    .signup {
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-block: 3rem;
-        & > * {
-            flex: 1;
-        }
-        p {
-            font-size: x-large;
-            font-weight: 300;
-            color: #2C384A;
-        }
-        div {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            input {
-                padding: 10px;
-                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.314);
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
-            }
-            button {
-                cursor: pointer;
-                background-color: #1B88F4;
-                padding: 10px;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-                color: white;
-                transition: all 0.3s;
-                &:hover {
-                  scale: 97%;
-                  box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 20px;
-                }
-            }
-        }
-    } 
+  }
 }
